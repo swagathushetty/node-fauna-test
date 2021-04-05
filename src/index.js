@@ -61,7 +61,6 @@ app.post('/tweet', async (req, res) => {
     text: "Holma Muncho !!!!"
   }
 
-  console.log(data)
 
   const doc = await client.query(
     Create(
@@ -70,7 +69,6 @@ app.post('/tweet', async (req, res) => {
     )
   )
 
-  console.log(doc)
 
   res.send(doc)
 
